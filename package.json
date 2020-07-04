@@ -26,5 +26,9 @@
   "devDependencies": {
     "rimraf": "^3.0.2",
     "typescript": "^3.3.4000"
+  },
+  "dependencies": {
+    "bignumber.js": "9.0.0",
+    "web3": "1.2.6"
   }
 }
