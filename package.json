@@ -11,6 +11,8 @@
     "build": "npm run clean && tsc -p tsconfig.json",
     "build:contracts": "solcjs --bin --abi -o contracts contracts/Voting.sol",
     "clean": "rimraf dist",
+    "docker:down": "docker-compose down",
+    "docker:up": "docker-compose up -d",
     "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
