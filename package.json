@@ -9,6 +9,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "npm run clean && tsc -p tsconfig.json",
+    "build:contracts": "solcjs --bin --abi -o contracts contracts/Voting.sol",
     "clean": "rimraf dist",
     "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -29,6 +30,7 @@
   },
   "dependencies": {
     "bignumber.js": "9.0.0",
+    "solc": "0.6.4",
     "web3": "1.2.6"
   }
 }
