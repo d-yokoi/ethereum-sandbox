@@ -1,5 +1,5 @@
 {
-  "name": "ts-template",
+  "name": "ethereum-sandbox",
   "version": "1.0.0",
   "description": "",
   "engines": {
@@ -18,14 +18,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/d-yokoi/ts-template.git"
+    "url": "git+ssh://git@github.com/d-yokoi/ethereum-sandbox.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/d-yokoi/ts-template/issues"
+    "url": "https://github.com/d-yokoi/ethereum-sandbox/issues"
   },
-  "homepage": "https://github.com/d-yokoi/ts-template#readme",
+  "homepage": "https://github.com/d-yokoi/ethereum-sandbox#readme",
   "devDependencies": {
     "rimraf": "^3.0.2",
     "typescript": "^3.3.4000"
