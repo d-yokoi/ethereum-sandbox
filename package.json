@@ -14,7 +14,7 @@
     "docker:down": "docker-compose down",
     "docker:up": "docker-compose up -d",
     "start": "node .",
-    "test": "jest --config=jest.config.js --errorOnDeprecated"
+    "test": "jest --config=jest.config.js --detectOpenHandles --errorOnDeprecated --forceExit"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,8 @@
   },
   "homepage": "https://github.com/d-yokoi/ethereum-sandbox#readme",
   "devDependencies": {
+    "@openzeppelin/test-environment": "0.1.4",
+    "@openzeppelin/test-helpers": "0.5.6",
     "@types/jest": "26.0.4",
     "@types/node": "14.0.21",
     "jest": "26.1.0",
