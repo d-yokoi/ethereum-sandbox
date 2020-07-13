@@ -1,8 +1,8 @@
-import { accounts, contract } from '@openzeppelin/test-environment';
+import { accounts, contract } from "@openzeppelin/test-environment";
 
-const SandboxToken = contract.fromArtifact('SandboxToken');
+const SandboxToken = contract.fromArtifact("SandboxToken");
 
-describe('sandbox-token', () => {
+describe("sandbox-token", () => {
   const [sender, recipient] = accounts;
 
   let sandboxToken: any;
@@ -10,15 +10,15 @@ describe('sandbox-token', () => {
     sandboxToken = await SandboxToken.new(210000, { from: sender });
   });
 
-  it('should transfer token', async () => {
+  it("should transfer token", async () => {
     const beforeBalance = await sandboxToken.balanceOf(recipient);
 
-    expect(beforeBalance.toString()).toBe('0');
+    expect(beforeBalance.toString()).toBe("0");
 
     await sandboxToken.transfer(recipient, 1, { from: sender });
 
     const afterBalance = await sandboxToken.balanceOf(recipient);
 
-    expect(afterBalance.toString()).toBe('1');
+    expect(afterBalance.toString()).toBe("1");
   });
 });
